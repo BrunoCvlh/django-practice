@@ -1,15 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
 <body>
-    <form action="{% url 'listagem_usuarios' %}">
+    <form action="{% url 'listagem_usuarios' %}" method="post">
+        {% csrf_token %}
         <h1>Cadastro de usuários</h1>
-        <h4>Digite seu nome <input name="nome" id="nome"></h4>
-        <h4>Digite sua idade <input name="nome" id="idade"></h4>
+        <h4>Digite seu nome <input name="nome"></h4>
+        <h4>Digite sua idade <input name="idade"></h4>
         <button>Enviar</button>
     </form>
 

@@ -15,3 +15,7 @@ def usuarios(request): #criar a função depois de terminar de preencher os mode
     }
 
     return render(request, 'usuarios/usuarios.html', usuarios)
+    #no caso dessa função, é importante capturar os valores da interface, criar um dicionário e mostrar os dados do dicionário em uma nova pagina que será criada logo após.
+
+def pagina_teste(request):
+    return render(request, 'usuarios/pagina_teste.html')

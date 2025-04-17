@@ -6,10 +6,10 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="{}">
+    <form action="{% url 'listagem_usuarios' %}">
         <h1>Cadastro de usuários</h1>
-        <h4>Digite seu nome <input id="nome"></h4>
-        <h4>Digite sua idade <input id="idade"></h4>
+        <h4>Digite seu nome <input name="nome" id="nome"></h4>
+        <h4>Digite sua idade <input name="nome" id="idade"></h4>
         <button>Enviar</button>
     </form>
 
